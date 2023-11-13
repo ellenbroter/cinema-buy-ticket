@@ -14,27 +14,28 @@
 		<h1>Kjøp billetter</h1>	
 		<div class="page-wrapper">
 			<div class="page-wrapper__column1">
-				<div class="custom-select">
-					<select>
-					  <option value="0">Velg kino:</option>
+
+				<form class="custom-select">
+					<label>Velg kino:</label>
+					<select class="dropdown-content">
 					  <option value="1">Colusseum</option>
 					  <option value="2">Ringen</option>
 					  <option value="3">Gimle</option>
-					  <option value="4">Klingenberg</option>
-					  <option value="5">Symra</option>
+					  <option value="3">Klingenberg</option>
+					  <option value="3">Symra</option>
 					</select>
-				</div>
+				</form>
 
-				 <div class="custom-select">
-					<select>
-					  <option value="0">Velg film:</option>
+				<form class="custom-select">
+					<label>Velg film:</label>
+					<select class="dropdown-content">
 					  <option value="1">Barbie</option>
 					  <option value="2">Oppenheimer</option>
 					  <option value="3">Fedrelandet</option>
-					  <option value="4">The Equalizer 3</option>
-					  <option value="5">The Smurfs</option>
+					  <option value="3">The Equalizer 3</option>
+					  <option value="3">The Smurfs</option>
 					</select>
-				 </div>
+				</form>
 
 				<div class="checkboxes">
 					<input type="checkbox" value="Select All">
@@ -49,7 +50,7 @@
 
 				<div class="date-selector">
 					<label class="date-selector__select" for="date">Velg dato:</label>
-					<input type="date" id="date" name="date" placeholder="">
+					<input type="date" id="date" name="date">
 				</div>
 
 				<div class="counter">
@@ -61,17 +62,17 @@
 		
 			<div class="page-wrapper__column2">
 				<form class="customer-details">
-					<label for="text">Fornavn<span class="customer-details__required-star">*</span></label>
-					<input type="text" placeholder="Fornavn" required>
-					<label for="text">Etternavn<span class="customer-details__required-star">*</span></label>
-					<input type="text" placeholder="Etternavn" required>
+					<label for="name">Fornavn<span class="customer-details__required-star">*</span></label>
+					<input type="name" class="first-name" placeholder="Fornavn" required>
+					<label for="name">Etternavn<span class="customer-details__required-star">*</span></label>
+					<input type="name" class="last-name" placeholder="Etternavn" required>
 					<label for="email">E-post<span class="customer-details__required-star">*</span></label>
-					<input type="email" placeholder="E-post" required>
+					<input type="email" class="email" placeholder="E-post" required>
 					<label for="confirm-email">Bekreft e-post<span class="customer-details__required-star">*</span></label>
-					<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
+					<input type="confirm-email" class="confirm-email" name="confirm-email" placeholder="E-post" required>
 					<label for="tel">Mobilnummer<span class="customer-details__required-star">*</span></label>
-					<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
-					<button>Fortsett</button>
+					<input type="tel" class="mobilenumber" name="mobilenumber" placeholder="Mobilnummer" required>
+					<button class="submit-button">Fortsett</button>
 				</form>
 			</div>
 		</div>
