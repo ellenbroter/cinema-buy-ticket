@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,8 @@
 	</head>
 
 	<body>
-		<h1>Kjøp billetter</h1>
-		<div class="page-wrapper">		
+		<h1>Kjøp billetter</h1>	
+		<div class="page-wrapper">
 			<div class="page-wrapper__column1">
 				<div class="custom-select">
 					<select>
@@ -23,7 +23,8 @@
 					  <option value="4">Klingenberg</option>
 					  <option value="5">Symra</option>
 					</select>
-				 </div>
+				</div>
+
 				 <div class="custom-select">
 					<select>
 					  <option value="0">Velg film:</option>
@@ -34,40 +35,45 @@
 					  <option value="5">The Smurfs</option>
 					</select>
 				 </div>
-			<div class="checkboxes">
-				<input type="checkbox" value="Select All" onclick="selectAll()">
-				<label>Alle </label>
-				<input type="checkbox">
-				<label>2D</label>
-				<input type="checkbox">
-				<label>4DX</label>
-				<input type="checkbox">
-				<label>3D</label>
+
+				<div class="checkboxes">
+					<input type="checkbox" value="Select All">
+					<label>Alle </label>
+					<input type="checkbox">
+					<label>2D</label>
+					<input type="checkbox">
+					<label>4DX</label>
+					<input type="checkbox">
+					<label>3D</label>
+				</div>
+
+				<div class="date-selector">
+					<label class="date-selector__select" for="date">Velg dato:</label>
+					<input type="date" id="date" name="date" placeholder="">
+				</div>
+
+				<div class="counter">
+					<button class="counter__quantity--down">-</button>
+					<input class="counter__quantity" type="text" placeholder="1">
+					<button class="counter__quantity--up">+</button>
+				</div>
 			</div>
-			<div class="date-selector">
-				<label class="date-selector__select" for="date">Velg dato:</label>
-  				<input type="date" id="date" name="date">
+		
+			<div class="page-wrapper__column2">
+				<form class="customer-details">
+					<label for="text">Fornavn<span class="customer-details__required-star">*</span></label>
+					<input type="text" placeholder="Fornavn" required>
+					<label for="text">Etternavn<span class="customer-details__required-star">*</span></label>
+					<input type="text" placeholder="Etternavn" required>
+					<label for="email">E-post<span class="customer-details__required-star">*</span></label>
+					<input type="email" placeholder="E-post" required>
+					<label for="confirm-email">Bekreft e-post<span class="customer-details__required-star">*</span></label>
+					<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
+					<label for="tel">Mobilnummer<span class="customer-details__required-star">*</span></label>
+					<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
+					<button>Fortsett</button>
+				</form>
 			</div>
-  			<div class="counter">
-				<button class="counter__quantity--down" onClick='decreaseCount(event, this)'>-</button>
-				<input class="counter__quantity" type="text" value="1">
-				<button class="counter__quantity--up"  onClick='increaseCount(event, this)'>+</button>
-			</div>
-		</div>
-		<div class="page-wrapper__column2">
-			<form class="customer-details">
-				<div><label for="text">Fornavn<span class="customer-details__required-star">*</span></label></div>
-				<div><input type="text" placeholder="Fornavn" required></div>
-				<div><label for="text">Etternavn<span class="customer-details__required-star">*</span></label></div>
-				<div><input type="text" placeholder="Etternavn" required></div>
-				<div><label for="email">E-post<span class="customer-details__required-star">*</span></label></div>
-				<div><input type="email" placeholder="E-post" required></div>
-				<div><label for="confirm-email">Bekreft e-post<span class="customer-details__required-star">*</span></label></div>
-				<div><input type="confirm-email" name="confirm-email" placeholder="E-post" required></div>
-				<div><label for="tel">Mobilnummer<span class="customer-details__required-star">*</span></label></div>
-				<div><input type="tel" name="mobilenumber" placeholder="Mobilnummer" required></div>
-			</form>
-			<button>Fortsett</button>
 		</div>
 		<script src="js/script.js"></script>
 	</body>
