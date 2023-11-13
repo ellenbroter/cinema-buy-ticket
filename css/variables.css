@@ -1,0 +1,22 @@
+:root {
+	--color-primary: #fff;
+	--color-secondary: #0E0E1B;
+	--color-tertiary: #171927;
+	--color-quarternary: #E39600;
+	--color-quinary: #79520D;
+
+	--font-family-primary: 'Diatype';
+	--font-size-base: 16px;
+	--font-size-small: 0.8rem;
+	--font-size-medium: 1.25rem;
+	--font-size-large: 2.5rem;
+	--font-line-height-base: 1rem;
+
+	--border-size: 0.06rem;
+	--border-size-large: 0.375rem;
+	--border-radius: 0.25rem;
+
+	--spacing-small: 0.5rem;
+	--spacing-medium: 1rem;
+	--spacing-large: 2rem;
+}

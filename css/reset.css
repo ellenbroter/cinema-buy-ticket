@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	touch-action: manipulation;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input {
+	font-family: inherit;
+	border: none;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
+	color: inherit;
+	outline: none;
+}
+
+.checkboxes {
+	border: none;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
+	color: inherit;
+	background-color: inherit;
+	outline: none;
+}

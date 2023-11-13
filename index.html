@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bestill kinobilletter</title>
+		<link rel="stylesheet" href="css/variables.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>Kjøp billetter</h1>
+		<div class="page-wrapper">		
+			<div class="page-wrapper__column1">
+				<div class="custom-select">
+					<select>
+					  <option value="0">Velg kino:</option>
+					  <option value="1">Colusseum</option>
+					  <option value="2">Ringen</option>
+					  <option value="3">Gimle</option>
+					  <option value="4">Klingenberg</option>
+					  <option value="5">Symra</option>
+					</select>
+				 </div>
+				 <div class="custom-select">
+					<select>
+					  <option value="0">Velg film:</option>
+					  <option value="1">Barbie</option>
+					  <option value="2">Oppenheimer</option>
+					  <option value="3">Fedrelandet</option>
+					  <option value="4">The Equalizer 3</option>
+					  <option value="5">The Smurfs</option>
+					</select>
+				 </div>
+			<div class="checkboxes">
+				<input type="checkbox" value="Select All" onclick="selectAll()">
+				<label>Alle </label>
+				<input type="checkbox">
+				<label>2D</label>
+				<input type="checkbox">
+				<label>4DX</label>
+				<input type="checkbox">
+				<label>3D</label>
+			</div>
+			<div class="date-selector">
+				<label class="date-selector__select" for="date">Velg dato:</label>
+  				<input type="date" id="date" name="date">
+			</div>
+  			<div class="counter">
+				<button class="counter__quantity--down" onClick='decreaseCount(event, this)'>-</button>
+				<input class="counter__quantity" type="text" value="1">
+				<button class="counter__quantity--up"  onClick='increaseCount(event, this)'>+</button>
+			</div>
+		</div>
+		<div class="page-wrapper__column2">
+			<form class="customer-details">
+				<div><label for="text">Fornavn<span class="customer-details__required-star">*</span></label></div>
+				<div><input type="text" placeholder="Fornavn" required></div>
+				<div><label for="text">Etternavn<span class="customer-details__required-star">*</span></label></div>
+				<div><input type="text" placeholder="Etternavn" required></div>
+				<div><label for="email">E-post<span class="customer-details__required-star">*</span></label></div>
+				<div><input type="email" placeholder="E-post" required></div>
+				<div><label for="confirm-email">Bekreft e-post<span class="customer-details__required-star">*</span></label></div>
+				<div><input type="confirm-email" name="confirm-email" placeholder="E-post" required></div>
+				<div><label for="tel">Mobilnummer<span class="customer-details__required-star">*</span></label></div>
+				<div><input type="tel" name="mobilenumber" placeholder="Mobilnummer" required></div>
+			</form>
+			<button>Fortsett</button>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
